@@ -58,9 +58,9 @@ export const business = {
    * All enquiry forms and WhatsApp buttons read from this single config.
    */
   whatsapp: {
-    enabled: false,
-    number: "919935801302",
-    displayNumber: "+91 99358 01302",
+    enabled: true,
+    number: "918009400540",
+    displayNumber: "+91 80094 00540",
   },
   siteUrl:
     process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
