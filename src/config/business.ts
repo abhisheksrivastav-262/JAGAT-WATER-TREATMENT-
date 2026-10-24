@@ -9,6 +9,12 @@ export const business = {
   shortName: "Jagat Water Treatment",
   legalName: "JAGAT WATER TREATMENT",
   tagline: "Advanced water treatment solutions for a sustainable future",
+  founder: {
+    name: "Jagat Narayan Shukla",
+    role: "Founder",
+    title: "Founder, JAGAT WATER TREATMENT",
+    image: "/images/company/founder.png",
+  },
   description:
     "JAGAT WATER TREATMENT designs, builds and supports sewage treatment, effluent treatment, water treatment and air pollution control systems on a turnkey basis from Varanasi, Uttar Pradesh.",
   specialities: [

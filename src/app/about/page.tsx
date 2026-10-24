@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowRight,
+  Award,
   CheckCircle2,
   Mail,
   MapPin,
   Phone,
+  Sparkles,
 } from "lucide-react";
 import { business, mapsDirectionsUrl } from "@/config/business";
 import { PageHero } from "@/components/PageHero";
@@ -186,6 +188,114 @@ export default function AboutPage() {
                   <MapPin className="h-4 w-4" aria-hidden="true" />
                   Find our office
                 </a>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder & Leadership Section */}
+      <section className="relative overflow-hidden border-b border-brand-line bg-gradient-to-b from-white via-brand-mist/50 to-white py-16 sm:py-20 lg:py-24">
+        <div className="container-x">
+          <div className="mx-auto max-w-5xl">
+            <Reveal>
+              <div className="overflow-hidden rounded-3xl border border-brand-line bg-white shadow-card">
+                <div className="grid items-center gap-8 p-6 sm:p-10 lg:grid-cols-12 lg:gap-12 lg:p-12">
+                  {/* Founder Image Column */}
+                  <div className="lg:col-span-5">
+                    <div className="relative mx-auto w-full max-w-[340px] sm:max-w-[380px] lg:max-w-none">
+                      {/* Decorative backdrop glow */}
+                      <div
+                        className="absolute -inset-2.5 rounded-[2.5rem] bg-gradient-to-br from-brand-blue/15 via-brand-cyan/20 to-brand-green/15 blur-xl opacity-75"
+                        aria-hidden="true"
+                      />
+
+                      {/* 
+                        Founder Image Container:
+                        - aspect-square (1:1) perfectly matches the 1320x1321 photo dimensions.
+                        - object-cover with object-center ensures the photo fits completely without any cropping or distortion on mobile or desktop.
+                      */}
+                      <div className="relative aspect-square w-full overflow-hidden rounded-2xl sm:rounded-3xl border-2 border-white bg-slate-100 shadow-soft">
+                        <Image
+                          src="/images/company/founder.png"
+                          alt="Jagat Narayan Shukla - Founder, JAGAT WATER TREATMENT"
+                          fill
+                          sizes="(max-width: 640px) 90vw, (max-width: 1024px) 380px, 420px"
+                          priority
+                          className="object-cover object-center transition-transform duration-500 hover:scale-[1.02]"
+                        />
+                      </div>
+
+                      {/* Floating Founder Badge */}
+                      <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 rounded-xl bg-brand-navy px-4 py-2.5 text-white shadow-lift border border-white/20 whitespace-nowrap">
+                        <p className="text-[0.62rem] font-bold uppercase tracking-[0.16em] text-brand-cyan">
+                          Founder &amp; Visionary
+                        </p>
+                        <p className="text-[0.85rem] font-bold text-white">
+                          Jagat Narayan Shukla
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Founder Information & Vision */}
+                  <div className="pt-4 sm:pt-6 lg:col-span-7 lg:pt-0">
+                    <div className="inline-flex items-center gap-2 rounded-full border border-brand-blue/20 bg-brand-blue/5 px-3 py-1 text-[0.72rem] font-semibold uppercase tracking-wider text-brand-blue">
+                      <Sparkles className="h-3.5 w-3.5 text-brand-blue" aria-hidden="true" />
+                      Leadership &amp; Founder
+                    </div>
+
+                    <h2 className="mt-3 text-2xl font-bold tracking-tight text-brand-navy sm:text-3xl lg:text-4xl">
+                      Jagat Narayan Shukla
+                    </h2>
+                    <p className="mt-1 text-[0.95rem] font-semibold text-brand-blue">
+                      Founder, JAGAT WATER TREATMENT
+                    </p>
+
+                    <div className="relative mt-5 space-y-4 text-[0.95rem] leading-7 text-slate-600">
+                      <blockquote className="rounded-2xl border-l-4 border-brand-blue bg-brand-mist/70 p-4 text-[0.92rem] font-medium italic text-slate-700">
+                        &ldquo;Our vision is simple: provide engineered, honest and reliable water treatment solutions that communities and industries in Varanasi and North India can rely upon with complete trust.&rdquo;
+                      </blockquote>
+                      <p>
+                        Under the visionary leadership of <strong className="font-semibold text-brand-navy">Jagat Narayan Shukla</strong>, JAGAT WATER TREATMENT has grown into a trusted turnkey partner for water, wastewater, and environmental engineering. His customer-first approach emphasizes practical engineering, long-term durability, and responsive service after handover.
+                      </p>
+                      <p>
+                        With in-house workshop fabrication and technical field teams in Varanasi, Mr. Shukla continues to drive innovation across Sewage Treatment Plants (STP), Effluent Treatment Plants (ETP), Commercial RO systems, and Industrial Air Pollution Control.
+                      </p>
+                    </div>
+
+                    {/* Commitments under his leadership */}
+                    <div className="mt-6 grid grid-cols-1 gap-2.5 border-t border-brand-line pt-6 sm:grid-cols-2">
+                      <div className="flex items-center gap-2 text-[0.84rem] font-medium text-brand-navy">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-green" aria-hidden="true" />
+                        <span>Direct Leadership Involvement</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[0.84rem] font-medium text-brand-navy">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-green" aria-hidden="true" />
+                        <span>Turnkey Accountability</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[0.84rem] font-medium text-brand-navy">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-green" aria-hidden="true" />
+                        <span>Varanasi Office &amp; Workshop</span>
+                      </div>
+                      <div className="flex items-center gap-2 text-[0.84rem] font-medium text-brand-navy">
+                        <CheckCircle2 className="h-4 w-4 shrink-0 text-brand-green" aria-hidden="true" />
+                        <span>Dependable AMC &amp; Support</span>
+                      </div>
+                    </div>
+
+                    <div className="mt-7 flex flex-wrap items-center gap-3.5">
+                      <Link href="/request-quote" className="btn-primary">
+                        Discuss your project
+                        <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                      </Link>
+                      <a href={business.phones[0].href} className="btn-outline">
+                        <Phone className="h-4 w-4 text-brand-blue" aria-hidden="true" />
+                        {business.phones[0].value}
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </Reveal>
           </div>
