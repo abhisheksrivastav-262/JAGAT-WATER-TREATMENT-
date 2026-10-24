@@ -20,7 +20,7 @@ export const business = {
     "Water Softeners",
     "Air Pollution Control",
   ],
-  email: "ecogreenenvirotech@gmail.com",
+  email: "Jagatnarayan201193@gmail.com",
   gst: "09GZYPS4837N1ZU",
   phones: [
     {
